@@ -358,7 +358,7 @@ nginx_install() {
     wget -nc --no-check-certificate http://nginx.org/download/nginx-${nginx_version}.tar.gz -P ${nginx_openssl_src}
     judge "Nginx 下载"
     # wget -nc --no-check-certificate https://www.openssl.org/source/openssl-${openssl_version}.tar.gz -P ${nginx_openssl_src}
-    wget -4 -N --no-check-certificate -q -O openssl-1.1.1k.tar.gz --user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0 Safari/537.36" -L https://www.openssl.org/source/openssl-${openssl_version}.tar.gz
+    wget -4 -N --no-check-certificate -q -O openssl-1.1.1k.tar.gz --user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0 Safari/537.36" -L https://www.openssl.org/source/openssl-1.1.1k.tar.gz
     judge "openssl 下载"
     wget -nc --no-check-certificate https://github.com/jemalloc/jemalloc/releases/download/${jemalloc_version}/jemalloc-${jemalloc_version}.tar.bz2 -P ${nginx_openssl_src}
     judge "jemalloc 下载"
