@@ -694,7 +694,7 @@ vmess_qr_config_h2() {
     cat >$v2ray_qr_config_file <<-EOF
 {
   "v": "2",
-  "ps": "wulabing_${domain}",
+  "ps": "${domain}",
   "add": "${domain}",
   "port": "${port}",
   "id": "${UUID}",
@@ -1018,8 +1018,8 @@ modify_camouflage_path() {
 menu() {
     update_sh
     echo -e "\t V2ray 安装管理脚本 ${Red}[${shell_version}]${Font}"
-    echo -e "\t---authored by wulabing---"
-    echo -e "\thttps://github.com/wulabing\n"
+    # echo -e "\t---authored by wulabing---"
+    # echo -e "\thttps://github.com/wulabing\n"
     echo -e "当前已安装版本:${shell_mode}\n"
 
     echo -e "—————————————— 安装向导 ——————————————"""
